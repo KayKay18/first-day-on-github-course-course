@@ -1,0 +1,16 @@
+title: First Day on GitHub Course
+description: GMT 320 Task 6
+template:
+  repo: first-day-on-github-course-template
+  name: first-day-on-github-course
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
